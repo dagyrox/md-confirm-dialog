@@ -1,0 +1,6 @@
+<h2 md-dialog-title *ngIf="!!textOptions.title">{{textOptions.title}}</h2>
+<md-dialog-content>{{textOptions.message}}</md-dialog-content>
+<md-dialog-actions>
+  <button md-button [md-dialog-close]="true" tabindex="1">{{textOptions.confirmText}}</button>
+  <button md-button [md-dialog-close]="false" tabindex="2">{{textOptions.denyText}}</button>
+</md-dialog-actions>
