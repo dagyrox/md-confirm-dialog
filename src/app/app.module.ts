@@ -1,32 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {
-  MdButtonModule,
-  MdDialogModule
-} from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdConfirmDialogModule } from './md-confirm-dialog/md-confirm-dialog.module';
 
 import { AppComponent } from './app.component';
-import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
-import { ConfirmDialogService } from './confirm-dialog/confirm-dialog.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ConfirmDialogComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    MdButtonModule,
-    MdDialogModule
+    MdConfirmDialogModule
   ],
-  entryComponents: [
-    ConfirmDialogComponent
-  ],
-  providers: [
-    ConfirmDialogService
-  ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
